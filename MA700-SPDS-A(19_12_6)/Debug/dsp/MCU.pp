@@ -1,0 +1,121 @@
+# FIXED
+
+dsp/MCU.obj: ../dsp/MCU.c
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/MCU.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/MCU_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/PIE_CTRL.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/COMMON.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/I2C.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEFAULT_ISR.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/ADC.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/SYS_CTRL.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/ADC_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/COMMON.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/ECAN.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/ECAN_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/CAN_BUF.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/GPIO.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/GPIO_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/I2C.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/I2C_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/I2T_APP.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/CAN_BUF.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/ECAN_APP.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/COMMON.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/WDG.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/WDG_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/SPI.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/SCI.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/TLV5638.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/device.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/I2T_APP.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/GPIO_APP.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/INIT_APP.h
+dsp/MCU.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/I2T_APP.h
+
+../dsp/MCU.c: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/MCU.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/MCU_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/PIE_CTRL.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/COMMON.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/I2C.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEFAULT_ISR.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/ADC.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/SYS_CTRL.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/ADC_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/COMMON.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/ECAN.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/ECAN_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/CAN_BUF.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/GPIO.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/GPIO_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/I2C.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/I2C_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/I2T_APP.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/CAN_BUF.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/ECAN_APP.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/COMMON.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/WDG.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/WDG_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/SPI.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/SCI.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/TLV5638.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/device.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/I2T_APP.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/GPIO_APP.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/INIT_APP.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/lru/I2T_APP.h: 

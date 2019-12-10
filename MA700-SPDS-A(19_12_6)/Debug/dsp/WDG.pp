@@ -1,0 +1,29 @@
+# FIXED
+
+dsp/WDG.obj: ../dsp/WDG.c
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/WDG.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/WDG_cfg.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/I2C.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEFAULT_ISR.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/SYS_CTRL.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/XINTF.h
+dsp/WDG.obj: D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h
+
+../dsp/WDG.c: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/WDG.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/WDG_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/I2C.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEFAULT_ISR.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/SYS_CTRL.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/config/DEVICE_cfg.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/XINTF.h: 
+D:/MA\ 700/MA700-SPDS-A(19_11_26)/head/DEVICE.h: 

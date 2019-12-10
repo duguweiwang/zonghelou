@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Debug.2010376074/CWD/delimiter=;
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Debug.2010376074/CWD/operation=replace
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Debug.2010376074/CWD/value=D\:\\Test\\COMAC_C919_CPA_DCS_CPA\\Debug
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Debug.2010376074/PWD/delimiter=;
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Debug.2010376074/PWD/operation=replace
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Debug.2010376074/PWD/value=D\:\\Test\\COMAC_C919_CPA_DCS_CPA\\Debug
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Debug.2010376074/append=true
+environment/project/com.ti.ccstudio.buildDefinitions.C2000.Debug.2010376074/appendContributed=true

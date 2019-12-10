@@ -1,0 +1,877 @@
+******************************************************************************
+             TMS320C2000 Linker PC v6.1.3                      
+******************************************************************************
+>> Linked Thu Dec 05 08:55:35 2019
+
+OUTPUT FILE NAME:   <MA700_SPDS.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00301fe1
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  ZONE0                 00004000   00001000  00000000  00001000  RWIX
+  RAML0                 00008000   00001000  0000001d  00000fe3  RWIX
+  RAML1                 00009000   00001000  00000400  00000c00  RWIX
+  RAML2                 0000a000   00001000  00000000  00001000  RWIX
+  RAML3                 0000b000   00001000  00000000  00001000  RWIX
+  ZONE6                 00100000   00100000  00000000  00100000  RWIX
+  ZONE7A                00200000   0000fc00  00000000  0000fc00  RWIX
+  FLASH_CoH             00300002   0002fffe  000023ff  0002dbff  RWIX
+  FLASHB                00330000   00007f6a  00000000  00007f6a  RWIX
+  Flash_VerBlk          00337f6a   00000050  00000050  00000000  RWIX
+  Flash_MemMap          00337fba   00000040  00000004  0000003c  RWIX
+  Flash_CRC16           00337ffa   00000006  00000002  00000004  RWIX
+  CSM_RSVD              0033ff80   00000076  00000000  00000076  RWIX
+  BEGIN                 0033fff6   00000002  00000002  00000000  RWIX
+  CSM_PWL               0033fff8   00000008  00000000  00000008  RWIX
+  ADC_CAL               00380080   00000009  00000007  00000002  RWIX
+  OTP                   00380400   00000400  00000000  00000400  RWIX
+  IQTABLES              003fe000   00000b50  00000000  00000b50  RWIX
+  IQTABLES2             003feb50   0000008c  00000000  0000008c  RWIX
+  FPUTABLES             003febdc   000006a0  00000000  000006a0  RWIX
+  ROM                   003ff27c   00000d44  00000000  00000d44  RWIX
+  RESET                 003fffc0   00000002  00000000  00000002  RWIX
+  VECTORS               003fffc2   0000003e  00000000  0000003e  RWIX
+
+PAGE 1:
+  BOOT_RSVD             00000000   00000050  00000000  00000050  RWIX
+  RAMM0                 00000050   000003b0  00000000  000003b0  RWIX
+  RAMM1                 00000400   00000400  00000000  00000400  RWIX
+  DEV_EMU               00000880   00000180  000000d0  000000b0  RWIX
+  FLASH_REGS            00000a80   00000060  00000008  00000058  RWIX
+  CSM                   00000ae0   00000010  00000010  00000000  RWIX
+  ADC_MIRROR            00000b00   00000010  00000010  00000000  RWIX
+  XINTF                 00000b20   00000020  0000001e  00000002  RWIX
+  CPU_TIMER0            00000c00   00000008  00000008  00000000  RWIX
+  CPU_TIMER1            00000c08   00000008  00000008  00000000  RWIX
+  CPU_TIMER2            00000c10   00000008  00000008  00000000  RWIX
+  PIE_CTRL              00000ce0   00000020  0000001a  00000006  RWIX
+  PIE_VECT              00000d00   00000100  00000100  00000000  RWIX
+  DMA                   00001000   00000200  00000000  00000200  RWIX
+  MCBSPA                00005000   00000040  00000000  00000040  RWIX
+  MCBSPB                00005040   00000040  00000000  00000040  RWIX
+  ECANA                 00006000   00000040  00000034  0000000c  RWIX
+  ECANA_LAM             00006040   00000040  00000040  00000000  RWIX
+  ECANA_MOTS            00006080   00000040  00000040  00000000  RWIX
+  ECANA_MOTO            000060c0   00000040  00000040  00000000  RWIX
+  ECANA_MBOX            00006100   00000100  00000100  00000000  RWIX
+  ECANB                 00006200   00000040  00000034  0000000c  RWIX
+  ECANB_LAM             00006240   00000040  00000040  00000000  RWIX
+  ECANB_MOTS            00006280   00000040  00000040  00000000  RWIX
+  ECANB_MOTO            000062c0   00000040  00000040  00000000  RWIX
+  ECANB_MBOX            00006300   00000100  00000100  00000000  RWIX
+  EPWM1                 00006800   00000022  00000000  00000022  RWIX
+  EPWM2                 00006840   00000022  00000000  00000022  RWIX
+  EPWM3                 00006880   00000022  00000000  00000022  RWIX
+  EPWM4                 000068c0   00000022  00000000  00000022  RWIX
+  EPWM5                 00006900   00000022  00000000  00000022  RWIX
+  EPWM6                 00006940   00000022  00000000  00000022  RWIX
+  ECAP1                 00006a00   00000020  00000000  00000020  RWIX
+  ECAP2                 00006a20   00000020  00000000  00000020  RWIX
+  ECAP3                 00006a40   00000020  00000000  00000020  RWIX
+  ECAP4                 00006a60   00000020  00000000  00000020  RWIX
+  ECAP5                 00006a80   00000020  00000000  00000020  RWIX
+  ECAP6                 00006aa0   00000020  00000000  00000020  RWIX
+  EQEP1                 00006b00   00000040  00000000  00000040  RWIX
+  EQEP2                 00006b40   00000040  00000000  00000040  RWIX
+  GPIOCTRL              00006f80   00000040  0000002e  00000012  RWIX
+  GPIODAT               00006fc0   00000020  00000020  00000000  RWIX
+  GPIOINT               00006fe0   00000020  0000000a  00000016  RWIX
+  SYSTEM                00007010   00000020  00000020  00000000  RWIX
+  SPIA                  00007040   00000010  00000010  00000000  RWIX
+  SCIA                  00007050   00000010  00000010  00000000  RWIX
+  XINTRUPT              00007070   00000010  00000000  00000010  RWIX
+  ADC                   00007100   00000020  0000001e  00000002  RWIX
+  SCIB                  00007750   00000010  00000010  00000000  RWIX
+  SCIC                  00007770   00000010  00000010  00000000  RWIX
+  I2CA                  00007900   00000040  00000022  0000001e  RWIX
+  RAML4                 0000c000   00004000  00001dbe  00002242  RWIX
+  ZONE7B                0020fc00   00000400  00000000  00000400  RWIX
+  CSM_PWL               0033fff8   00000008  00000008  00000000  RWIX
+  PARTID                00380090   00000001  00000001  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.pinit     0    00300002    00000000     UNINITIALIZED
+
+.stack     0    00009000    00000400     UNINITIALIZED
+                  00009000    00000400     --HOLE--
+
+.text      0    00300002    00002115     
+                  00300002    00000897     ECAN.obj (.text)
+                  00300899    00000468     ECAN_APP.obj (.text)
+                  00300d01    0000032e     GPIO_APP.obj (.text)
+                  0030102f    0000030f     I2T_APP.obj (.text)
+                  0030133e    00000229     ADC.obj (.text)
+                  00301567    0000020a     I2C.obj (.text)
+                  00301771    00000174     GPIO.obj (.text)
+                  003018e5    0000011f     SPI.obj (.text)
+                  00301a04    00000100     DEFAULT_ISR.obj (.text:retain)
+                  00301b04    000000e1     INIT_APP.obj (.text)
+                  00301be5    000000c5     TLV5638.obj (.text)
+                  00301caa    000000c2     SCHEDULER.obj (.text)
+                  00301d6c    00000089     MCU.obj (.text)
+                  00301df5    00000084     SYS_CTRL.obj (.text)
+                  00301e79    00000072     CAN_BUF.obj (.text)
+                  00301eeb    0000005a     fs_mpy.obj (.text)
+                  00301f45    0000004e     CBIT_APP.obj (.text)
+                  00301f93    0000004e     SCI.obj (.text)
+                  00301fe1    00000044     cinit.obj (.text)
+                  00302025    00000033     WDG.obj (.text)
+                  00302058    0000002a     l_div.obj (.text)
+                  00302082    00000023     PIE_CTRL.obj (.text)
+                  003020a5    00000021     PIE_VECT.obj (.text)
+                  003020c6    00000021     fs_toul.obj (.text)
+                  003020e7    0000001d     MCU.obj (.text:retain)
+                  00302104    0000000a     ARG_MAIN.obj (.text)
+                  0030210e    00000008     dsp2833x_codestartbranch.obj (.text)
+                  00302116    00000001     EEPROM.obj (.text)
+
+ramfuncs   0    00302117    0000001d     RUN ADDR = 00008000
+                  00302117    00000019     SYS_CTRL.obj (ramfuncs)
+                  00302130    00000004     dsp2833x_usdelay.obj (ramfuncs)
+
+.cinit     0    00302134    00000222     
+                  00302134    00000103     PIE_VECT.obj (.cinit)
+                  00302237    0000005d     COMMON.obj (.cinit)
+                  00302294    00000033     SPI.obj (.cinit)
+                  003022c7    0000002b     ECAN_APP.obj (.cinit)
+                  003022f2    00000021     SCHEDULER.obj (.cinit)
+                  00302313    0000000f     ECAN.obj (.cinit)
+                  00302322    0000000d     MCU.obj (.cinit)
+                  0030232f    0000000c     CAN_BUF.obj (.cinit)
+                  0030233b    0000000c     CBIT_APP.obj (.cinit)
+                  00302347    00000005     GPIO.obj (.cinit)
+                  0030234c    00000004     GPIO_APP.obj (.cinit)
+                  00302350    00000004     I2T_APP.obj (.cinit)
+                  00302354    00000002     --HOLE-- [fill = 0]
+
+.switch    0    00302356    0000005e     
+                  00302356    00000020     ADC.obj (.switch:_ADC_ConfigChannel)
+                  00302376    00000020     ADC.obj (.switch:_ADC_GetADCResult)
+                  00302396    0000001e     ECAN_APP.obj (.switch:_ECAN_APP_Msg_Setting)
+
+.econst    0    003023b4    0000004d     
+                  003023b4    00000014     I2T_APP.obj (.econst:_CH_R_TAB$1)
+                  003023c8    00000014     I2T_APP.obj (.econst:_DC_RC_TAB)
+                  003023dc    00000010     I2T_APP.obj (.econst:_AC_RC_TAB)
+                  003023ec    00000010     I2T_APP.obj (.econst:_AC_R_TAB$2)
+                  003023fc    00000003     TLV5638.obj (.econst)
+                  003023ff    00000001     ECAN.obj (.econst)
+                  00302400    00000001     I2C.obj (.econst)
+
+verblock   0    00337f6a    00000050     
+                  00337f6a    00000050     boot_def.obj (verblock)
+
+mapblock   0    00337fba    00000004     
+                  00337fba    00000004     boot_def.obj (mapblock)
+
+crcblock   0    00337ffa    00000002     
+                  00337ffa    00000002     boot_def.obj (crcblock)
+
+codestart 
+*          0    0033fff6    00000002     
+                  0033fff6    00000002     dsp2833x_codestartbranch.obj (codestart)
+
+.adc_cal   0    00380080    00000007     NOLOAD SECTION
+                  00380080    00000007     dsp2833x_adc_cal.obj (.adc_cal)
+
+.reset     0    003fffc0    00000002     DSECT
+                  003fffc0    00000002     cinit.obj (.reset)
+
+vectors    0    003fffc2    00000000     DSECT
+
+DevEmuRegsFile 
+*          1    00000880    000000d0     UNINITIALIZED
+                  00000880    000000d0     DEVICE.obj (DevEmuRegsFile)
+
+FlashRegsFile 
+*          1    00000a80    00000008     UNINITIALIZED
+                  00000a80    00000008     SYS_CTRL.obj (FlashRegsFile)
+
+CsmRegsFile 
+*          1    00000ae0    00000010     UNINITIALIZED
+                  00000ae0    00000010     SYS_CTRL.obj (CsmRegsFile)
+
+AdcMirrorFile 
+*          1    00000b00    00000010     UNINITIALIZED
+                  00000b00    00000010     ADC.obj (AdcMirrorFile)
+
+XintfRegsFile 
+*          1    00000b20    0000001e     UNINITIALIZED
+                  00000b20    0000001e     WDG.obj (XintfRegsFile)
+
+CpuTimer0RegsFile 
+*          1    00000c00    00000008     UNINITIALIZED
+                  00000c00    00000008     MCU.obj (CpuTimer0RegsFile)
+
+CpuTimer1RegsFile 
+*          1    00000c08    00000008     UNINITIALIZED
+                  00000c08    00000008     MCU.obj (CpuTimer1RegsFile)
+
+CpuTimer2RegsFile 
+*          1    00000c10    00000008     UNINITIALIZED
+                  00000c10    00000008     MCU.obj (CpuTimer2RegsFile)
+
+PieCtrlRegsFile 
+*          1    00000ce0    0000001a     UNINITIALIZED
+                  00000ce0    0000001a     PIE_CTRL.obj (PieCtrlRegsFile)
+
+PieVectTableFile 
+*          1    00000d00    00000100     UNINITIALIZED
+                  00000d00    00000100     PIE_VECT.obj (PieVectTableFile)
+
+ECanaRegsFile 
+*          1    00006000    00000034     UNINITIALIZED
+                  00006000    00000034     ECAN.obj (ECanaRegsFile)
+
+ECanaLAMRegsFile 
+*          1    00006040    00000040     UNINITIALIZED
+                  00006040    00000040     ECAN.obj (ECanaLAMRegsFile)
+
+ECanaMOTSRegsFile 
+*          1    00006080    00000040     UNINITIALIZED
+                  00006080    00000040     ECAN.obj (ECanaMOTSRegsFile)
+
+ECanaMOTORegsFile 
+*          1    000060c0    00000040     UNINITIALIZED
+                  000060c0    00000040     ECAN.obj (ECanaMOTORegsFile)
+
+ECanaMboxesFile 
+*          1    00006100    00000100     UNINITIALIZED
+                  00006100    00000100     ECAN.obj (ECanaMboxesFile)
+
+ECanbRegsFile 
+*          1    00006200    00000034     UNINITIALIZED
+                  00006200    00000034     ECAN.obj (ECanbRegsFile)
+
+ECanbLAMRegsFile 
+*          1    00006240    00000040     UNINITIALIZED
+                  00006240    00000040     ECAN.obj (ECanbLAMRegsFile)
+
+ECanbMOTSRegsFile 
+*          1    00006280    00000040     UNINITIALIZED
+                  00006280    00000040     ECAN.obj (ECanbMOTSRegsFile)
+
+ECanbMOTORegsFile 
+*          1    000062c0    00000040     UNINITIALIZED
+                  000062c0    00000040     ECAN.obj (ECanbMOTORegsFile)
+
+ECanbMboxesFile 
+*          1    00006300    00000100     UNINITIALIZED
+                  00006300    00000100     ECAN.obj (ECanbMboxesFile)
+
+GpioCtrlRegsFile 
+*          1    00006f80    0000002e     UNINITIALIZED
+                  00006f80    0000002e     GPIO.obj (GpioCtrlRegsFile)
+
+GpioDataRegsFile 
+*          1    00006fc0    00000020     UNINITIALIZED
+                  00006fc0    00000020     GPIO.obj (GpioDataRegsFile)
+
+GpioIntRegsFile 
+*          1    00006fe0    0000000a     UNINITIALIZED
+                  00006fe0    0000000a     GPIO.obj (GpioIntRegsFile)
+
+SysCtrlRegsFile 
+*          1    00007010    00000020     UNINITIALIZED
+                  00007010    00000020     SYS_CTRL.obj (SysCtrlRegsFile)
+
+SpiaRegsFile 
+*          1    00007040    00000010     UNINITIALIZED
+                  00007040    00000010     SPI.obj (SpiaRegsFile)
+
+SciaRegsFile 
+*          1    00007050    00000010     UNINITIALIZED
+                  00007050    00000010     SCI.obj (SciaRegsFile)
+
+AdcRegsFile 
+*          1    00007100    0000001e     UNINITIALIZED
+                  00007100    0000001e     ADC.obj (AdcRegsFile)
+
+ScibRegsFile 
+*          1    00007750    00000010     UNINITIALIZED
+                  00007750    00000010     SCI.obj (ScibRegsFile)
+
+ScicRegsFile 
+*          1    00007770    00000010     UNINITIALIZED
+                  00007770    00000010     SCI.obj (ScicRegsFile)
+
+I2caRegsFile 
+*          1    00007900    00000022     UNINITIALIZED
+                  00007900    00000022     I2C.obj (I2caRegsFile)
+
+.ebss      1    0000c000    00001dbe     UNINITIALIZED
+                  0000c000    000017c8     SPI.obj (.ebss)
+                  0000d7c8    00000015     CBIT_APP.obj (.ebss)
+                  0000d7dd    00000014     GPIO_APP.obj (.ebss)
+                  0000d7f1    00000001     --HOLE--
+                  0000d7f2    0000000e     MCU.obj (.ebss)
+                  0000d800    0000016a     ECAN_APP.obj (.ebss)
+                  0000d96a    00000004     TLV5638.obj (.ebss)
+                  0000d96e    00000002     GPIO.obj (.ebss)
+                  0000d970    00000010     --HOLE--
+                  0000d980    00000100     PIE_VECT.obj (.ebss)
+                  0000da80    000000e0     I2T_APP.obj (.ebss)
+                  0000db60    00000020     --HOLE--
+                  0000db80    000000c0     CAN_BUF.obj (.ebss)
+                  0000dc40    000000a8     ECAN.obj (.ebss)
+                  0000dce8    00000018     --HOLE--
+                  0000dd00    00000070     COMMON.obj (.ebss)
+                  0000dd70    00000010     --HOLE--
+                  0000dd80    0000003e     SCHEDULER.obj (.ebss)
+
+CsmPwlFile 
+*          1    0033fff8    00000008     UNINITIALIZED
+                  0033fff8    00000008     SYS_CTRL.obj (CsmPwlFile)
+
+PartIdRegsFile 
+*          1    00380090    00000001     UNINITIALIZED
+                  00380090    00000001     DEVICE.obj (PartIdRegsFile)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00300002   .text
+00337ffa   CRC16_Value
+00301eeb   FS$$MPY
+003020c6   FS$$TOUL
+00302058   L$$DIV
+00302067   L$$MOD
+00302075   UL$$DIV
+0030207c   UL$$MOD
+00301a10   _ADCINT_ISR
+00000b00   _ADC_AdcMirror
+00007100   _ADC_AdcRegs
+0030143a   _ADC_Check_SEQCNTR
+00301370   _ADC_ConfigChannel
+0000dd01   _ADC_FINISHED_FLAG
+0030144b   _ADC_GetADCResult
+003014ae   _ADC_GetAverageResult
+003014d0   _ADC_GetFinalResult
+0030151a   _ADC_GetResult
+0030142b   _ADC_HandleSEQINT
+0030133e   _ADC_Init
+0000dd40   _ADC_Ref_Check
+00301424   _ADC_Reset_SEQ
+0000dd00   _ADC_START_FLAG
+0030152f   _ADC_Sort
+00380080   _ADC_cal
+00301e92   _CAN_BUF_GetData
+00301e79   _CAN_BUF_Init
+00301ebb   _CAN_BUF_PutData
+00301f45   _CBIT_APP_Process
+00301f61   _CBIT_APP_Test
+0000d7dd   _Channal_Status
+0000dd86   _Channel_Current
+00300f3b   _Channel_PhaseState_Judge
+0000dd96   _Channel_Status
+00008019   _DSP28x_usDelay
+00000880   _DevEmuRegs
+00301ac3   _ECAN0INTA_ISR
+00301ace   _ECAN0INTB_ISR
+00301ac8   _ECAN1INTA_ISR
+00301ad4   _ECAN1INTB_ISR
+00300899   _ECAN_APP_ReceiveProcess
+003008e2   _ECAN_APP_TransmitProcess
+0000d940   _ECAN_APP_ms_Msg_Re
+0030084b   _ECAN_CheckRegister
+00300575   _ECAN_ConfigRecMsgBox
+00300421   _ECAN_ConfigSendMsgBox
+00006040   _ECAN_ECanaLAMRegs
+000060c0   _ECAN_ECanaMOTORegs
+00006080   _ECAN_ECanaMOTSRegs
+00006100   _ECAN_ECanaMboxes
+00006000   _ECAN_ECanaRegs
+00006240   _ECAN_ECanbLAMRegs
+000062c0   _ECAN_ECanbMOTORegs
+00006280   _ECAN_ECanbMOTSRegs
+00006300   _ECAN_ECanbMboxes
+00006200   _ECAN_ECanbRegs
+003003f3   _ECAN_EnterNormalMode
+00300837   _ECAN_GetBusoffError
+00300018   _ECAN_InitECan
+0030021a   _ECAN_InitECanGPIO
+00300002   _ECAN_InitModule
+00300724   _ECAN_RecMsgAll
+00300864   _ECAN_ResetCAN
+00300230   _ECAN_SelfTest
+00300674   _ECAN_SendMsg
+0000dc40   _ECAN_mp_LAM_Regs
+0000dc48   _ECAN_mp_MBoxes
+0000dc44   _ECAN_mp_Regs
+0000dc80   _ECAN_ms_Regs_Shadow
+003023ff   _ECAN_mu16_Register_Ref
+00301a64   _ECAP1_INT_ISR
+00301a6a   _ECAP2_INT_ISR
+00301a70   _ECAP3_INT_ISR
+00301a76   _ECAP4_INT_ISR
+00301a7c   _ECAP5_INT_ISR
+00301a82   _ECAP6_INT_ISR
+00302116   _EEPROM_Init
+00301a40   _EPWM1_INT_ISR
+00301a1c   _EPWM1_TZINT_ISR
+00301a46   _EPWM2_INT_ISR
+00301a22   _EPWM2_TZINT_ISR
+00301a4c   _EPWM3_INT_ISR
+00301a28   _EPWM3_TZINT_ISR
+00301a52   _EPWM4_INT_ISR
+00301a2e   _EPWM4_TZINT_ISR
+00301a58   _EPWM5_INT_ISR
+00301a34   _EPWM5_TZINT_ISR
+00301a5e   _EPWM6_INT_ISR
+00301a3a   _EPWM6_TZINT_ISR
+0000c001   _FLAG
+0000d7f2   _FLG_mu16_LRU_CAN_MailboxSN
+00300d29   _GPIO_APP_ChannelProcess
+00300d01   _GPIO_APP_StateInit
+00300efc   _GPIO_CLOSE_FAILED_Ctrl
+0030182e   _GPIO_ChannelTurnOff
+00301821   _GPIO_ChannelTurnOn
+0030181d   _GPIO_ChannelType
+00301f7a   _GPIO_CheckSSPCChannel
+003017f2   _GPIO_ClearGPIOPort
+00300f10   _GPIO_Error_Ctrl
+00301811   _GPIO_GetChannelStatus
+00300f1a   _GPIO_GetCtrlStatus
+00006f80   _GPIO_GpioCtrlRegs
+00006fc0   _GPIO_GpioDataRegs
+00006fe0   _GPIO_GpioIntRegs
+00301771   _GPIO_Init
+00301783   _GPIO_InitGPIOPort
+00300f06   _GPIO_OPEN_FAILED_Ctrl
+00300e69   _GPIO_OverloadCtrl
+0030183c   _GPIO_ReadGPIOPort
+00301857   _GPIO_ReadSSPC_ID
+00300ede   _GPIO_Short_Ctrl
+00300ef2   _GPIO_status_OFF_Ctrl
+00300ee8   _GPIO_status_ON_Ctrl
+0000dc4c   _GROUP_FLAG
+00301a94   _I2CINT1A_ISR
+00301a99   _I2CINT2A_ISR
+003016be   _I2C_BlkTx_Addr
+0030171f   _I2C_BlkTx_Data
+00301713   _I2C_BlkTx_W4DataEnd
+0030174c   _I2C_BlkTx_W4Stop
+00301760   _I2C_CheckRegister
+00301567   _I2C_Init
+0030159e   _I2C_InitGpio
+003015b4   _I2C_Read
+00301655   _I2C_ReadData
+003015d9   _I2C_ReadOneBlock
+00301616   _I2C_SendReadAddr
+003016de   _I2C_SendWriteCmd
+00301639   _I2C_WaitRxReady
+00301673   _I2C_Write
+00302400   _I2C_mu16_Register_Ref
+0000dd0e   _I2T_ADC_Value
+0030130a   _I2T_APP_ChannelStatus
+0030132d   _I2T_APP_GetCurrent
+0030108c   _I2T_APP_GetRateCurrent
+00301062   _I2T_APP_I2tClear
+0030102f   _I2T_APP_Init
+0030112c   _I2T_APP_Process
+00301085   _I2T_APP_SetType
+003012fb   _I2T_APP_Short
+0000dac0   _I2T_Control
+00007900   _I2caRegs
+00301b04   _INIT_APP_GPIO
+00301b68   _INIT_APP_Module
+00301df1   _MCU_ClearStatus_5ms
+00301d81   _MCU_ConfigClock
+00000c00   _MCU_CpuTimer0Regs
+00000c08   _MCU_CpuTimer1Regs
+00000c10   _MCU_CpuTimer2Regs
+00301de9   _MCU_GetStatus_5ms
+00301de5   _MCU_GetTMR0_5ms
+00301dba   _MCU_GetTaskFlag
+00301d6c   _MCU_InitClock
+00301dd0   _MCU_SetTaskFlag
+0000d7f8   _MCU_ms_CpuTimer0
+00300bb9   _PHASE_Command
+00300bf4   _PHASE_JUDGE
+0000d802   _PHASE_JUDGE_FLAG
+00302082   _PIE_CTRL_Init
+00000ce0   _PIE_CTRL_PieCtrlRegs
+00301af8   _PIE_RESERVED
+00000d00   _PIE_VECT_PieVectTable
+003020a5   _PIE_VECT_Table_Init
+00380090   _PartIdRegs
+0000d980   _PieVectTableInit
+00302134   _RamfuncsLoadEnd
+00302117   _RamfuncsLoadStart
+00008000   _RamfuncsRunStart
+00301d4b   _SCHEDULER_EnableGlobalInterrupts
+00301d42   _SCHEDULER_InitSysCtrl
+00301d04   _SCHEDULER_InitTask
+00301d55   _SCHEDULER_MemCopy
+00301aab   _SCIRXINTA_ISR
+00301ab7   _SCIRXINTB_ISR
+00301a9f   _SCIRXINTC_ISR
+00301ab1   _SCITXINTA_ISR
+00301abd   _SCITXINTB_ISR
+00301aa5   _SCITXINTC_ISR
+00301fd5   _SCI_Error_Process
+00301fc6   _SCI_Rx_Data
+00007050   _SCI_SciaRegs
+00007750   _SCI_ScibRegs
+00007770   _SCI_ScicRegs
+00301fbc   _SCI_Tx_Data
+0000d96e   _SOURCE_FID
+00301a88   _SPIRXINTA_ISR
+00301a8e   _SPITXINTA_ISR
+0000c040   _SPI_DATA
+003019b7   _SPI_GetChannelData
+0030197c   _SPI_GetResult
+003019d1   _SPI_Gpio_Init
+003018e5   _SPI_Init
+0030196c   _SPI_Rece_Current
+00301974   _SPI_Rece_State
+00007040   _SPI_SpiaRegs
+0000c004   _SPI_mu16_Rece
+0000c440   _SPI_mu16_Rece_gpio_temp
+0000c018   _SPI_mu16_State
+0033fff8   _SYS_CsmPwl
+00000ae0   _SYS_CsmRegs
+00008000   _SYS_Ctrl_Flash_Init
+00301df5   _SYS_Ctrl_InitPll
+00301e2f   _SYS_Ctrl_PeripheralClocks_Init
+00000a80   _SYS_FlashRegs
+00007010   _SYS_SysCtrlRegs
+0000dd83   _Sch_value
+00301f93   _Sci_Init
+003020e7   _TINT0_ISR
+00301c9e   _TLV5638_Delay
+00301be5   _TLV5638_Init
+00301c66   _TLV5638_Output_Channel_A
+00301bfe   _TLV5638_Set_Up
+00301c7a   _TLV5638_VoltageCheck
+003023fc   _TLV5638_ms_DefaultSettings
+00301a16   _WAKEINT_ISR
+00302050   _WDG_DisableDog
+00302025   _WDG_InitInterruptMode
+00302031   _WDG_InitResetMode
+00302047   _WDG_ResetSys
+0030203d   _WDG_ServiceDog
+00301a04   _XINT1_ISR
+00301a0a   _XINT2_ISR
+00301ada   _XINT3_ISR
+00301ae0   _XINT4_ISR
+00301ae6   _XINT5_ISR
+00301aec   _XINT6_ISR
+00301af2   _XINT7_ISR
+00000b20   _XintfRegs
+00009400   __STACK_END
+00000400   __STACK_SIZE
+ffffffff   ___binit__
+ffffffff   ___c_args__
+00302134   ___cinit__
+00302117   ___etext__
+ffffffff   ___pinit__
+00300002   ___text__
+00302104   __arg_main_Sched
+00009000   __stack
+00302107   _arg_main_Exit
+0030210d   _arg_main_abort
+00301fe1   _c_int00
+0000db81   _gs16_DataCount
+0000db82   _gu16_InputPosition
+0000db80   _gu16_OutputPosition
+0000dbc0   _gu32_Array
+0000dd0a   _gu32_GPIO_PORTA_IN_MASK
+0000dd06   _gu32_GPIO_PORTA_OUT_MASK
+0000dd02   _gu32_GPIO_PORTB_IN_MASK
+0000dd08   _gu32_GPIO_PORTB_OUT_MASK
+0000dd04   _gu32_GPIO_PORTC_IN_MASK
+0000dd0c   _gu32_GPIO_PORTC_OUT_MASK
+0000dd85   _lu16_BoardID
+0000dd80   _lu16_i2cRead
+00301caa   _main
+0000dc6a   _recHighBytes
+0000dc56   _recLowBytes
+00301afe   _rsvd_ISR
+ffffffff   binit
+00302134   cinit
+0033fff6   code_start
+00302117   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000400   __STACK_SIZE
+00000880   _DevEmuRegs
+00000a80   _SYS_FlashRegs
+00000ae0   _SYS_CsmRegs
+00000b00   _ADC_AdcMirror
+00000b20   _XintfRegs
+00000c00   _MCU_CpuTimer0Regs
+00000c08   _MCU_CpuTimer1Regs
+00000c10   _MCU_CpuTimer2Regs
+00000ce0   _PIE_CTRL_PieCtrlRegs
+00000d00   _PIE_VECT_PieVectTable
+00006000   _ECAN_ECanaRegs
+00006040   _ECAN_ECanaLAMRegs
+00006080   _ECAN_ECanaMOTSRegs
+000060c0   _ECAN_ECanaMOTORegs
+00006100   _ECAN_ECanaMboxes
+00006200   _ECAN_ECanbRegs
+00006240   _ECAN_ECanbLAMRegs
+00006280   _ECAN_ECanbMOTSRegs
+000062c0   _ECAN_ECanbMOTORegs
+00006300   _ECAN_ECanbMboxes
+00006f80   _GPIO_GpioCtrlRegs
+00006fc0   _GPIO_GpioDataRegs
+00006fe0   _GPIO_GpioIntRegs
+00007010   _SYS_SysCtrlRegs
+00007040   _SPI_SpiaRegs
+00007050   _SCI_SciaRegs
+00007100   _ADC_AdcRegs
+00007750   _SCI_ScibRegs
+00007770   _SCI_ScicRegs
+00007900   _I2caRegs
+00008000   _RamfuncsRunStart
+00008000   _SYS_Ctrl_Flash_Init
+00008019   _DSP28x_usDelay
+00009000   __stack
+00009400   __STACK_END
+0000c001   _FLAG
+0000c004   _SPI_mu16_Rece
+0000c018   _SPI_mu16_State
+0000c040   _SPI_DATA
+0000c440   _SPI_mu16_Rece_gpio_temp
+0000d7dd   _Channal_Status
+0000d7f2   _FLG_mu16_LRU_CAN_MailboxSN
+0000d7f8   _MCU_ms_CpuTimer0
+0000d802   _PHASE_JUDGE_FLAG
+0000d940   _ECAN_APP_ms_Msg_Re
+0000d96e   _SOURCE_FID
+0000d980   _PieVectTableInit
+0000dac0   _I2T_Control
+0000db80   _gu16_OutputPosition
+0000db81   _gs16_DataCount
+0000db82   _gu16_InputPosition
+0000dbc0   _gu32_Array
+0000dc40   _ECAN_mp_LAM_Regs
+0000dc44   _ECAN_mp_Regs
+0000dc48   _ECAN_mp_MBoxes
+0000dc4c   _GROUP_FLAG
+0000dc56   _recLowBytes
+0000dc6a   _recHighBytes
+0000dc80   _ECAN_ms_Regs_Shadow
+0000dd00   _ADC_START_FLAG
+0000dd01   _ADC_FINISHED_FLAG
+0000dd02   _gu32_GPIO_PORTB_IN_MASK
+0000dd04   _gu32_GPIO_PORTC_IN_MASK
+0000dd06   _gu32_GPIO_PORTA_OUT_MASK
+0000dd08   _gu32_GPIO_PORTB_OUT_MASK
+0000dd0a   _gu32_GPIO_PORTA_IN_MASK
+0000dd0c   _gu32_GPIO_PORTC_OUT_MASK
+0000dd0e   _I2T_ADC_Value
+0000dd40   _ADC_Ref_Check
+0000dd80   _lu16_i2cRead
+0000dd83   _Sch_value
+0000dd85   _lu16_BoardID
+0000dd86   _Channel_Current
+0000dd96   _Channel_Status
+00300002   .text
+00300002   _ECAN_InitModule
+00300002   ___text__
+00300018   _ECAN_InitECan
+0030021a   _ECAN_InitECanGPIO
+00300230   _ECAN_SelfTest
+003003f3   _ECAN_EnterNormalMode
+00300421   _ECAN_ConfigSendMsgBox
+00300575   _ECAN_ConfigRecMsgBox
+00300674   _ECAN_SendMsg
+00300724   _ECAN_RecMsgAll
+00300837   _ECAN_GetBusoffError
+0030084b   _ECAN_CheckRegister
+00300864   _ECAN_ResetCAN
+00300899   _ECAN_APP_ReceiveProcess
+003008e2   _ECAN_APP_TransmitProcess
+00300bb9   _PHASE_Command
+00300bf4   _PHASE_JUDGE
+00300d01   _GPIO_APP_StateInit
+00300d29   _GPIO_APP_ChannelProcess
+00300e69   _GPIO_OverloadCtrl
+00300ede   _GPIO_Short_Ctrl
+00300ee8   _GPIO_status_ON_Ctrl
+00300ef2   _GPIO_status_OFF_Ctrl
+00300efc   _GPIO_CLOSE_FAILED_Ctrl
+00300f06   _GPIO_OPEN_FAILED_Ctrl
+00300f10   _GPIO_Error_Ctrl
+00300f1a   _GPIO_GetCtrlStatus
+00300f3b   _Channel_PhaseState_Judge
+0030102f   _I2T_APP_Init
+00301062   _I2T_APP_I2tClear
+00301085   _I2T_APP_SetType
+0030108c   _I2T_APP_GetRateCurrent
+0030112c   _I2T_APP_Process
+003012fb   _I2T_APP_Short
+0030130a   _I2T_APP_ChannelStatus
+0030132d   _I2T_APP_GetCurrent
+0030133e   _ADC_Init
+00301370   _ADC_ConfigChannel
+00301424   _ADC_Reset_SEQ
+0030142b   _ADC_HandleSEQINT
+0030143a   _ADC_Check_SEQCNTR
+0030144b   _ADC_GetADCResult
+003014ae   _ADC_GetAverageResult
+003014d0   _ADC_GetFinalResult
+0030151a   _ADC_GetResult
+0030152f   _ADC_Sort
+00301567   _I2C_Init
+0030159e   _I2C_InitGpio
+003015b4   _I2C_Read
+003015d9   _I2C_ReadOneBlock
+00301616   _I2C_SendReadAddr
+00301639   _I2C_WaitRxReady
+00301655   _I2C_ReadData
+00301673   _I2C_Write
+003016be   _I2C_BlkTx_Addr
+003016de   _I2C_SendWriteCmd
+00301713   _I2C_BlkTx_W4DataEnd
+0030171f   _I2C_BlkTx_Data
+0030174c   _I2C_BlkTx_W4Stop
+00301760   _I2C_CheckRegister
+00301771   _GPIO_Init
+00301783   _GPIO_InitGPIOPort
+003017f2   _GPIO_ClearGPIOPort
+00301811   _GPIO_GetChannelStatus
+0030181d   _GPIO_ChannelType
+00301821   _GPIO_ChannelTurnOn
+0030182e   _GPIO_ChannelTurnOff
+0030183c   _GPIO_ReadGPIOPort
+00301857   _GPIO_ReadSSPC_ID
+003018e5   _SPI_Init
+0030196c   _SPI_Rece_Current
+00301974   _SPI_Rece_State
+0030197c   _SPI_GetResult
+003019b7   _SPI_GetChannelData
+003019d1   _SPI_Gpio_Init
+00301a04   _XINT1_ISR
+00301a0a   _XINT2_ISR
+00301a10   _ADCINT_ISR
+00301a16   _WAKEINT_ISR
+00301a1c   _EPWM1_TZINT_ISR
+00301a22   _EPWM2_TZINT_ISR
+00301a28   _EPWM3_TZINT_ISR
+00301a2e   _EPWM4_TZINT_ISR
+00301a34   _EPWM5_TZINT_ISR
+00301a3a   _EPWM6_TZINT_ISR
+00301a40   _EPWM1_INT_ISR
+00301a46   _EPWM2_INT_ISR
+00301a4c   _EPWM3_INT_ISR
+00301a52   _EPWM4_INT_ISR
+00301a58   _EPWM5_INT_ISR
+00301a5e   _EPWM6_INT_ISR
+00301a64   _ECAP1_INT_ISR
+00301a6a   _ECAP2_INT_ISR
+00301a70   _ECAP3_INT_ISR
+00301a76   _ECAP4_INT_ISR
+00301a7c   _ECAP5_INT_ISR
+00301a82   _ECAP6_INT_ISR
+00301a88   _SPIRXINTA_ISR
+00301a8e   _SPITXINTA_ISR
+00301a94   _I2CINT1A_ISR
+00301a99   _I2CINT2A_ISR
+00301a9f   _SCIRXINTC_ISR
+00301aa5   _SCITXINTC_ISR
+00301aab   _SCIRXINTA_ISR
+00301ab1   _SCITXINTA_ISR
+00301ab7   _SCIRXINTB_ISR
+00301abd   _SCITXINTB_ISR
+00301ac3   _ECAN0INTA_ISR
+00301ac8   _ECAN1INTA_ISR
+00301ace   _ECAN0INTB_ISR
+00301ad4   _ECAN1INTB_ISR
+00301ada   _XINT3_ISR
+00301ae0   _XINT4_ISR
+00301ae6   _XINT5_ISR
+00301aec   _XINT6_ISR
+00301af2   _XINT7_ISR
+00301af8   _PIE_RESERVED
+00301afe   _rsvd_ISR
+00301b04   _INIT_APP_GPIO
+00301b68   _INIT_APP_Module
+00301be5   _TLV5638_Init
+00301bfe   _TLV5638_Set_Up
+00301c66   _TLV5638_Output_Channel_A
+00301c7a   _TLV5638_VoltageCheck
+00301c9e   _TLV5638_Delay
+00301caa   _main
+00301d04   _SCHEDULER_InitTask
+00301d42   _SCHEDULER_InitSysCtrl
+00301d4b   _SCHEDULER_EnableGlobalInterrupts
+00301d55   _SCHEDULER_MemCopy
+00301d6c   _MCU_InitClock
+00301d81   _MCU_ConfigClock
+00301dba   _MCU_GetTaskFlag
+00301dd0   _MCU_SetTaskFlag
+00301de5   _MCU_GetTMR0_5ms
+00301de9   _MCU_GetStatus_5ms
+00301df1   _MCU_ClearStatus_5ms
+00301df5   _SYS_Ctrl_InitPll
+00301e2f   _SYS_Ctrl_PeripheralClocks_Init
+00301e79   _CAN_BUF_Init
+00301e92   _CAN_BUF_GetData
+00301ebb   _CAN_BUF_PutData
+00301eeb   FS$$MPY
+00301f45   _CBIT_APP_Process
+00301f61   _CBIT_APP_Test
+00301f7a   _GPIO_CheckSSPCChannel
+00301f93   _Sci_Init
+00301fbc   _SCI_Tx_Data
+00301fc6   _SCI_Rx_Data
+00301fd5   _SCI_Error_Process
+00301fe1   _c_int00
+00302025   _WDG_InitInterruptMode
+00302031   _WDG_InitResetMode
+0030203d   _WDG_ServiceDog
+00302047   _WDG_ResetSys
+00302050   _WDG_DisableDog
+00302058   L$$DIV
+00302067   L$$MOD
+00302075   UL$$DIV
+0030207c   UL$$MOD
+00302082   _PIE_CTRL_Init
+003020a5   _PIE_VECT_Table_Init
+003020c6   FS$$TOUL
+003020e7   _TINT0_ISR
+00302104   __arg_main_Sched
+00302107   _arg_main_Exit
+0030210d   _arg_main_abort
+00302116   _EEPROM_Init
+00302117   _RamfuncsLoadStart
+00302117   ___etext__
+00302117   etext
+00302134   _RamfuncsLoadEnd
+00302134   ___cinit__
+00302134   cinit
+003023fc   _TLV5638_ms_DefaultSettings
+003023ff   _ECAN_mu16_Register_Ref
+00302400   _I2C_mu16_Register_Ref
+00337ffa   CRC16_Value
+0033fff6   code_start
+0033fff8   _SYS_CsmPwl
+00380080   _ADC_cal
+00380090   _PartIdRegs
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[263 symbols]
